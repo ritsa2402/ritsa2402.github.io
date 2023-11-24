@@ -1,0 +1,462 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    display: block;
+}
+li{
+    list-style: none;
+}
+section{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#logod{
+    width: 20%;
+}
+.logo{
+    width: 30%;
+}
+.cabeza{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    background-position: center;
+    margin: 0px;
+    padding: 0px;
+    
+}
+#cabeza{
+    position: absolute;
+}
+#bus{/*buscar con la lupa*/
+    position: relative;
+    margin-top: 25px;
+}
+.busbo{
+    background-color: #fff;
+    border-style: none;
+}
+.menu1{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.menu1 li{
+    list-style: none;
+    float: left;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-left: 30px;
+    cursor: pointer;   
+}
+.menu1 button{
+    border-style: none;
+    background-color: #fff;
+}
+.BLACK{
+    color: #d62f05;
+}
+/*Menu ocultos*/
+
+#menuOculto1{
+    background-color: #fff; 
+    border-top: #b1afaf60 1px solid;
+    border-bottom: #b1afaf60 1px solid;
+    transition: all 0.5s;
+    height: 520px;
+    display: none;
+}
+#menuOculto1.active{
+    display: block;
+    transition: all 0.5s;
+}
+#menuOculto2{
+    background-color: #fff; 
+    border-top: #b1afaf60 1px solid;
+    border-bottom: #b1afaf60 1px solid;
+    transition: all 0.5s;
+    height: 520px;
+    display: none;
+}
+#menuOculto2.active{
+    display: block;
+    transition: all 0.5s;
+}
+#menuOculto3{
+    background-color: #fff; 
+    border-top: #b1afaf60 1px solid;
+    border-bottom: #b1afaf60 1px solid;
+    transition: all 0.5s;
+    height: 520px;
+    display: none;
+}
+#menuOculto3.active{
+    display: block;
+    transition: all 0.5s;
+}
+#menuOculto4{
+    background-color: #fff; 
+    border-top: #b1afaf60 1px solid;
+    border-bottom: #b1afaf60 1px solid;
+    transition: all 0.5s;
+    height: 520px;
+    display: none;
+}
+
+#menuOculto4.active{
+    display: block;
+    transition: all 0.5s;
+}
+#menuOculto5{
+    background-color: #fff; 
+    border-top: #b1afaf60 1px solid;
+    border-bottom: #b1afaf60 1px solid;
+    transition: all 0.5s;
+    height: 520px;
+    display: none;
+}
+
+#menuOculto5.active{
+    display: block;
+    transition: all 0.5s;
+}
+#menuOculto5 span{
+    color: #d62f05;
+}
+#menuOculto5 .prim{
+    color: #000;
+}
+#menuOculto5 .spa2{
+    margin-top: 20px;
+}
+.menuocul h5{
+    margin-top: 40px;
+}
+.menuocul a{
+    color: #000;
+}
+.menuocul span{
+    font-weight: bold;
+}
+#Primercua{
+    border-right: #b1afaf60 1px solid;
+    padding: 0px 50px 50px 80px;
+}
+#Primercua img{
+    width: 100%;
+    height: 450px;
+}
+#Segundocua{
+    padding: 0px 50px 50px 80px;
+}
+#Segundocua img{
+    width: 100%;
+    height: 450px;
+}
+#cua{
+    width: 160px;
+    line-height: 15px;
+}
+#circuloimg img{
+    width: 20px;
+    height: 20px;
+}
+#imgamarillo img{
+    width: 140px;
+    height: 120px;
+}
+/*para el slider*/
+#slider{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.slider-container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide{
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2em;
+}
+.slide img{
+    width: 100%;
+    height: 500px;
+}
+.botones{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    margin-top: 20px;
+}
+.botones label{
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+    /* Ocultar los radios de entrada */
+input[type="radio"] {
+    display: none;
+}
+    /* Cambiar el color del punto seleccionado */
+input[type="radio"]:checked + .botones label {
+    background-color: #e2dfdf;
+}
+
+
+/*para las cajas de conenido*/
+
+#cajascon{
+    width: 70%;
+    margin-top: 20px;
+}
+#caja{
+    background-color: #fff;
+    width: 40%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    padding: 0px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    color: #000;
+}
+#caja p{
+    margin: 30px;
+}
+#caja h4{
+    margin: 30px;
+
+}
+#caja a{
+    margin: 30px;
+
+}
+#caja img{
+    width: 100%;
+    height: 400px;
+}
+
+/*para el contenido lateral*/
+
+#pagLateral{
+    width: 25%;
+}
+#pagLateral li{
+    float: left;
+    align-items: center;
+    width: 16%;
+}
+#pagLateral .icong{
+    margin-left: 5px;
+}
+#cuuu{
+    margin-top: 30px;
+}
+
+.contactanos{
+    padding-top: 7px;
+    background-color: #fff;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    border: #000 1px solid;
+}
+.registrate .campos{
+    margin: 10px;
+}
+.registrate input{
+    width: 70%;
+}
+.registrate .comentario{
+    height: 100px;
+}
+.registrate{
+    padding-top: 20px;
+    background-color: #fff;
+    width: 100%;
+    height: 380px;
+    text-align: center;
+    border: #000 1px solid;
+}
+.registrate button{
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    width: 100px;
+}
+.caa{
+    padding: 0px 20px;
+}
+#caaa{
+    padding: 0px 10px 5px 10px;
+    border-bottom: #7979795e 1px solid;
+}
+#caaa h4{
+    margin-top: 25px;
+}
+#caaa .num{
+    font-weight: 900;
+}
+.pagextrastitulo{
+    text-align: center;
+}
+.pagextras{
+    align-content: center;
+    background-color: #fff;
+    width: 100%;
+    height: 700px;
+    padding: 30px 0px;
+    border: #000 1px solid;
+}
+.pagextras a{
+    color: #000;
+}
+.principal{
+    margin-top: 40px;
+}
+
+/*fin*/
+
+.fin{
+    background-color:rgb(23, 23, 29);
+    padding: 20px;
+}
+.imaagen{
+    width: 30%;
+    height: 50px;
+    margin-left: 30%;
+    margin-top: 15%;
+}
+.fin a{
+    color: #fff;
+}
+/*Resgistrar login*/
+.imagenfondo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0.5, 0.5)), url(../img/imagen1.avif);
+    text-align: center;
+}
+.cuadrologuin{
+    background-color: #dddbdb;
+    width: 35%;
+    height: 430px;
+    margin-left: 30%;
+    margin-top: 8%;
+    padding-top: 30px;
+    border-radius: 2rem;
+}
+.cuadrologuin input{
+    width: 60%;
+    height: 30px;
+    border-radius: 3rem;
+    margin-top: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+#cuadroregistro{
+    display: none;
+    height: 530px;
+    margin-top: 5%;
+}
+#botonenviar{
+    width: 30%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.enlace{
+    margin-top: 50px;
+}
+.enlace a{
+    color: #000;
+}
+
+/*Cuadro de comentario*/
+.tabla{
+    background-color: #fff;
+    font-weight: bold;
+    border-style: double;
+    font-size: 16px;
+}
+.tablaa{
+    width: 200px;
+    height: 200px;
+    text-align: left;
+    padding: 0px 50px;
+}
+.formEli{
+    background-color:#fff;
+    text-align:center;
+    margin: 10px 0px 0px 20px;
+    padding: 20px 0px;
+    border-style: double;
+}
+.formEli label{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    border-bottom-style:double;
+}
+.formEli input{
+    border-radius: 1rem;
+    margin-left: 20px;
+    border-style: none;
+    height: 30px;
+}
+.formEli .eliminar{
+    width: 100px;
+    height: 40px;
+    border-radius: 1rem;
+    background-color: rgba(133, 132, 132, 0.349);
+    border-style: none;
+    color: #000;
+    font-size: 15px;
+}
+.formAct{
+    background-color:#fff;
+    margin-left: 40px;
+    border-style: double;
+    padding-bottom: 30px;
+}
+
+.formAct label{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    border-bottom-style:double;
+    margin-bottom: 9px;
+}
+.formAct input{
+    border-radius: 1rem;
+    margin-left: 20px;
+    border-style: none;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.formAct .actualizar{
+    width: 200px;
+    height: 50px;
+    border-radius: 1rem;
+    background-color: rgba(133, 132, 132, 0.349);
+    border-style: none;
+    color: #000;
+    font-size: 18px;
+    margin-left: 200px;
+}
